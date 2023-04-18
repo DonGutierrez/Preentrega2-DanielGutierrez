@@ -1,0 +1,45 @@
+// meadia quari
+
+
+@media screen and (max-width: 768px) {
+    .header {
+        text-align: center;
+
+    }
+
+    .grids .grid {
+        grid-column: 1/-1;
+    }
+
+    .grids .sidebar {
+        grid-column: 1/6;
+    }
+    .grids  .post {
+        grid-column: 1/-1;
+    }
+
+    nav{
+        justify-content: center;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .contenedor {
+        display: block;
+       
+    }
+    .playlist {
+        width: 39%;
+       
+    
+    }
+    .colum {
+    flex-direction: column;   
+    padding: 10px; 
+    }
+
+}
+
+

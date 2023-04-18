@@ -6,7 +6,7 @@ body {
 }
 
 .botonera img{
-    width: 150px;
+     width: 150px;
 }
 
 
@@ -154,7 +154,7 @@ p {
 
 /*inicio de css de ventana series+*/
 .contenedor{
-    width: 100%;
+    width: $primw;
     display: flex;
     flex-wrap: wrap;
     max-width: 1100px;

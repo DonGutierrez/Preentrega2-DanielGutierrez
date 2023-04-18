@@ -1,0 +1,251 @@
+body {
+  background-image: url(../img/darkhoneycomb.png);
+}
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(255, 20, 20);
+  border-style: solid;
+  border-width: 3px;
+  border-color: rgb(255, 255, 255);
+}
+
+h2 {
+  color: rgb(255, 20, 20);
+  text-align: center;
+}
+
+h3 {
+  color: rgb(255, 20, 20);
+  text-align: center;
+}
+
+h4 {
+  color: rgb(255, 20, 20);
+  text-align: center;
+}
+
+p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(241, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+}
+
+.botonera img {
+  width: 150px;
+}
+.botonera li {
+  display: inline-block;
+}
+.botonera li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 20px;
+  display: block;
+}
+.botonera li a:hover {
+  background: rgb(255, 20, 20);
+}
+
+.grids {
+  background: rgb(65, 65, 65);
+  width: 100%;
+  max-width: 1700px;
+  margin: 1.6em auto;
+  display: grid;
+  gap: 1.6em;
+  grid-template-columns: repeat(5, 1fr);
+}
+.grids div {
+  background: #504f4f;
+  padding: 20px;
+  border: 1px solid #000;
+}
+.grids .head {
+  grid-column: 1/6;
+  background: #585858;
+}
+.grids .grid {
+  grid-column: span 3;
+}
+.grids .article {
+  background: #808e9b;
+  padding: 20px;
+  margin-top: 5px;
+  color: #f7f1f1;
+}
+.grids .article h2 {
+  padding: 10px;
+}
+.grids .article h2 p {
+  padding: 10px;
+}
+.grids .sidebar {
+  grid-column: span 2;
+  background: #808e9b;
+  color: #f1f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.grids .sidebar img {
+  width: 100%;
+  margin-top: 5px;
+}
+.grids .post {
+  background: #808e9b;
+  color: #fff;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease;
+}
+.grids .post:hover {
+  cursor: pointer;
+  color: #000;
+  background: #fff;
+}
+
+/*inicio de css de ventana series+*/
+.contenedor {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.playlist {
+  width: 27%;
+  margin: 20px;
+  border-radius: 6px;
+  overflow: hidden;
+  background: rgb(65, 65, 65);
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
+  cursor: default;
+  transition: all 400ms ease;
+}
+.playlist:hover {
+  box-shadow: 5px 5px 20px rgb(255, 255, 255);
+  transform: translateY(-2%);
+}
+.playlist a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  color: rgb(255, 255, 255);
+  border: 1px solid rgb(255, 20, 20);
+  border-radius: 4px;
+  transition: all 400ms ease;
+}
+.playlist .contenido {
+  padding: 15px;
+  text-align: center;
+}
+.playlist .contenido a:hover {
+  background: rgb(255, 20, 20);
+  color: rgb(255, 255, 255);
+}
+
+.filters {
+  padding: 0 30px 40px 30px;
+}
+.filters a {
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  text-decoration: none;
+  margin-bottom: 4px;
+  text-transform: lowercase;
+}
+.filters span {
+  display: block;
+  color: rgb(255, 20, 20);
+  margin: 10px;
+  letter-spacing: 1px;
+}
+.filters a:hover {
+  color: rgb(255, 20, 20);
+}
+
+.number-1 {
+  margin: 0 auto;
+}
+
+.opciones {
+  font-size: 1.3em;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+}
+
+article {
+  padding: 50px;
+  margin: 10px;
+  background: rgb(65, 65, 65);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 1px 10px rgb(255, 255, 255);
+}
+
+.colum {
+  display: flex;
+  flex-direction: row;
+}
+
+.info-nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactar {
+  text-align: center;
+}
+.contactar div {
+  color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+  .grids .grid {
+    grid-column: 1/-1;
+  }
+  .grids .sidebar {
+    grid-column: 1/6;
+  }
+  .grids .post {
+    grid-column: 1/-1;
+  }
+  nav {
+    justify-content: center;
+  }
+  nav ul {
+    display: none;
+  }
+  .contenedor {
+    display: block;
+  }
+  .playlist {
+    width: 39%;
+  }
+  .colum {
+    flex-direction: column;
+    padding: 10px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

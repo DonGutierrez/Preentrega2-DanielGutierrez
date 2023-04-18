@@ -1,0 +1,26 @@
+//extends
+
+//mixin
+@mixin flex ($direction,$justify,$align){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+//maps
+$paleta:(
+    'uno': #ff0000,
+    'dos': #ec3434,
+    'tres':#d64d4d,
+    'cuatro':#e9e9e9,
+    'cinco': #9b9a9b,
+    'seis': #292829,
+    'siete':#e20505,
+    'ocho':#d48181,
+    'nueve':#c0b9bf,
+    'diez':#ffffff,
+    'once': #e7dbe5,
+    'doce': #363636,
+    'trece':#3f393e,
+);

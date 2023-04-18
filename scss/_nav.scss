@@ -1,0 +1,34 @@
+// nesting / anidacion
+
+
+.botonera{
+    img{
+        width: 150px;
+    }
+    li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+              color:$keyColor;
+              padding: 20px;
+             display: block;
+             &:hover{
+                background:$mainColor;
+             }
+         }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+

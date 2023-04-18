@@ -1,0 +1,79 @@
+//prueba de index
+
+.grids{
+    background: $secondaryColor;
+    width: $primwidth;
+    max-width: 1700px;
+    margin: 1.6em auto;
+
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(5, 1fr);
+   div {
+    background: #504f4f;
+    padding: 20px;
+    border: 1px solid #000;
+   }
+    .head{
+        grid-column: 1/6;
+    background: #585858;
+
+    }
+    .grid {
+        grid-column: span 3;
+    }
+    .article{
+        background: #808e9b ;
+        padding: 20px;
+        margin-top: 5px;
+        color: #f7f1f1;
+        h2{
+            padding: 10px;
+            p{
+             padding: 10px;
+            }
+        }
+    }
+    .sidebar{
+        grid-column: span 2;
+    background: #808e9b;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+        width: 100%;
+    margin-top: 5px;
+    }
+   }
+   .post{
+    background: #808e9b;
+    color: #fff;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    &:hover{
+    cursor: pointer;
+    color: #000;
+    background: #fff;
+    }
+   }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 

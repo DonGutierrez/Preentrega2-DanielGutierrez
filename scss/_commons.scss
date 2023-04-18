@@ -1,0 +1,46 @@
+
+body {
+  background-image: url(../img/darkhoneycomb.png)
+  
+}
+h1 {
+    color:$keyColor;
+    text-align: center;
+    background-color:$mainColor;
+    border-style: solid;
+    border-width: 3px;
+    border-color:$keyColor;
+  }
+
+  h2 {
+    color:$mainColor;
+    text-align: center;
+  }
+
+
+  h3 {
+    color:$mainColor;
+    text-align: center;
+  }
+
+
+  h4 {
+    color:$mainColor;
+    text-align: center;
+  }
+  
+
+p {
+    color:$keyColor;
+    text-align: center;
+}
+
+footer{
+    
+  text-align: center;
+  padding: 5px;
+  background-color: rgb(241, 0, 0);
+  color: rgb(255, 255, 255); 
+  display: flex;
+  flex-direction: row;
+  }
