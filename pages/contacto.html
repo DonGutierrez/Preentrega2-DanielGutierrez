@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    
     <title>Frazze - Contactos y pedidos para nuevos animes</title>
-<meta name="description" content="Enviandonos un mensaje podras contactar con nosotros para alguna peticion en especial o sugerencia">
-
+     <meta name="description" content="Enviandonos un mensaje podras contactar con nosotros para alguna peticion en especial o sugerencia">
+ <!--link de bs-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-
+ <!--link de main.css-->
     <link rel="stylesheet" href="../css/main.css">
+
+    <link rel="icon" type="image/png" href="../img/favicon-96x96.png">
 
 </head>
 <body>
@@ -22,6 +24,7 @@
             <img src="../img/logo.png" alt="">
   
           </a>
+           <!--inicia boostrap-->
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
               <!--here el boton hamburguesa-->
@@ -50,22 +53,30 @@
         </div>
       </nav>
 
-    
+      <h1>CONTACTANOS</h1>
+      <h2>Peticiones</h2>
+      <p>En esta sección podrás escribir que anime te gustaría que incluyamos o traduzcamos. Solo deja tu petición y no olviden compartir con tus amigos el sitio web!</p>
     <main class="contactar">
-        <h1>CONTACTANOS</h1>
-        <div>
+     
+        <div class="contant">
+         
         <form action="/action_page.php">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value="John"><br>
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value="Doe"><br><br>
-            <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+            <label for="fname">Nombre:</label><br>
+            <input type="text" id="fname" name="fname" value="Daniel"><br>
+            <label for="lname">Apellido:</label><br>
+            <input type="text" id="lname" name="lname" value="Gutierrez"><br><br>
+            <textarea name="message" rows="10" cols="30">Escribenos que es lo que te gustaria ver.</textarea>
             <br><br>
+           
             <input type="submit" value="Cancelar">
+            
+          
             <input type="reset" value="Aceptar">
+          
         </form> 
       </div>
-        <h2>Peticiones</h2>
+    </main>
+    <div class="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4499.656131808344!2d-56.
         87309209192101!3d-37.1113688500083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
         1!3m3!1m2!1s0x959c9cde69f3eab9%3A0x3c79b0d121707ca3!2sAv.
@@ -73,29 +84,30 @@
         20Aires!5e0!3m2!1ses!2sar!4v1679037049618!5m2!1ses!2sar"
          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
-    </main>
-    
-
+      </div>
+ <!--inicia footer-->
     <footer>
       <div>
         <a href="https://www.facebook.com/" target="_blank">
-          <img src="../img/facebook.png" alt="">
+          <img src="../img/facebook.png" alt="facebook">
         </a>
        </div>
        <div>
         <a href="https://www.instagram.com/" target="_blank">
-          <img src="../img/instagram.png" alt="">
+          <img src="../img/instagram.png" alt="instagram">
         </a>
        </div>
        <div>
         <a href="https://www.youtube.com/" target="_blank">
-          <img src="../img/youtube.png" alt="">
+          <img src="../img/youtube.png" alt="youtube">
         </a>
        </div>
         <p>Author: Daniel Gutierrez<br>
         <a href="mailto:hege@example.com">hege@example.com</a></p>
     </footer>  
-    
+     <!--termina footer-->
+
+      <!--link de bs-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>

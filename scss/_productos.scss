@@ -10,46 +10,46 @@
     gap: 1.6em;
     grid-template-columns: repeat(5, 1fr);
    div {
-    background: #504f4f;
-    padding: 20px;
-    border: 1px solid #000;
+    background: $secondaryColor;
+    padding: $primargin;
+    border: 1px solid $blackcolor;
    }
     .head{
         grid-column: 1/6;
-    background: #585858;
+    background: $secondaryColor;
 
     }
     .grid {
         grid-column: span 3;
     }
     .article{
-        background: #808e9b ;
-        padding: 20px;
+        background: $platinum;
+        padding: $primargin;
         margin-top: 5px;
-        color: #f7f1f1;
+        color: $keyColor;
         h2{
-            padding: 10px;
+            padding: $paddingY;
             p{
-             padding: 10px;
+             padding: $paddingY;
             }
         }
     }
     .sidebar{
         grid-column: span 2;
-    background: #808e9b;
-    color: #f1f1f1;
+    background: $platinum;
+    color: $keyColor;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     img{
-        width: 100%;
+        width: $primwidth;
     margin-top: 5px;
     }
    }
    .post{
-    background: #808e9b;
-    color: #fff;
+    background: $platinum;
+    color: $keyColor;
     height: 180px;
     display: flex;
     align-items: center;
@@ -57,8 +57,8 @@
     transition: all 0.5s ease;
     &:hover{
     cursor: pointer;
-    color: #000;
-    background: #fff;
+    color: $blackcolor;
+    background: $keyColor;
     }
    }
 }
@@ -66,14 +66,3 @@
 
 
 
-
-
-
-
-
-
-
-
- 
-
- 

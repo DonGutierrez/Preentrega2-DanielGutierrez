@@ -1,9 +1,30 @@
 //contactos
 .contactar{
-    text-align: center;
-    div{
-        color: $keyColor;
-    }
+    @include flex (flex,center, center);
+    min-height: $skyheight;
+    
+    .contant{
+        
+        @include flex (flex,center, center);
+        box-shadow: 0 0 20px rgba(239, 255, 255, 0.7);
+        border-radius: 25px;
+        width: 900px;
+        background-color: $secondaryColor;
+       
+        form{
+            width: 90%;
+            padding: 50px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+        
+        }
+        
+       
  }
-
  
+}
+
+.map{
+    text-align: center;
+}

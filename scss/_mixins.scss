@@ -1,14 +1,44 @@
 //extends
+.post{
+    background: $platinum;
+    color: $keyColor;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+    &:hover{
+    cursor: pointer;
+    color: $blackcolor;
+    background: $keyColor;
+    }
+}
+    
+.post1{
+    @extend .post;
+    border-radius: 4px;
+}
+
+
 
 //mixin
-@mixin flex ($direction,$justify,$align){
+@mixin flex ($direction, $justify, $items){
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
-    align-items: $align;
+    align-items: $items;
+  
 }
 
+@mixin flex-box ($content, $wrap){
+    display: flex;
+    justify-content: $content;
+    flex-wrap: $wrap;
+}
 //maps
+
+
+
 $paleta:(
     'uno': #ff0000,
     'dos': #ec3434,

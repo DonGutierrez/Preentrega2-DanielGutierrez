@@ -1,7 +1,51 @@
 
-.info-nosotros {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.noso-box{
+   
+    @include flex-box ( center, wrap);
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5%;
+    border-radius: $paddingY;
+  
+    .noso-hover{
+        
+        width: 0%;
+        height: $skyheight;
+        background-color: rgba(56, 53, 53, 0.500);
+        position: absolute;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        transition: 4s all;
+        
+    }
+    &:hover{
+        .noso-hover{
+            width: $primwidth;
+            height: $priheight;
+        }
+    }
+
+}
+
+.noso-hover{
+    h2{
+        color: $keyColor;
+        text-shadow: 1px 1px 1px black;
+        font-size: 2.5em;
+        text-transform: uppercase;
+
+    }
+
+}
+.noso-imagen{
     
+    
+    width: $primwidth;
+    height: $priheight;
+    object-fit: cover;
 }

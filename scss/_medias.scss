@@ -26,18 +26,18 @@
         display: none;
     }
 
-    .contenedor {
-        display: block;
-       
+    .noso-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  
     }
-    .playlist {
-        width: 39%;
-       
     
-    }
     .colum {
-    flex-direction: column;   
-    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: auto; 
     }
 
 }
